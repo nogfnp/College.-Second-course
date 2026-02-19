@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Туристический сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css_Main.css">
+</head>
+<body>
+    <div id="videoModal" class="video-modal">
+        <span class="video-modal__close">&times;</span>
+        <div class="video-modal__content">
+            <video id="fullscreenVideo" class="video-modal__video" controls>
+                <source src="" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </div>
+
+    <header>
+        <img class="header__logo wow animate__animated animate__fadeInLeft" data-wow-duration="1s" src="../../Images/Footer/Logo/Trip&Mind_Logo.png" alt="Логотип">
+        <div class="header__navigation-list">
+            <p class="header__tours wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">Все туры</p>
+            <p class="header__rewiews wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">Отзыв</p>
+            <p class="header__contacs wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">Контакты</p>
+        </div>
+        <img class="header__more wow animate__animated animate__fadeInRight" data-wow-duration="1s" src="../../Images/Header/More(TripleStrip).png" alt="Меню">
+    </header>
+
+    <main>
+        <section class="main__hero" id="heroSection">
+            <h1 class="main__openNewIreland wow animate__animated animate__fadeInUp" data-wow-duration="1.2s">Открой для себя Новую <br> Ирландию</h1>
+            <p class="main__toursFrom wow animate__animated animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">Авторские туры по экзотическим <br> уголкам от Максима Чаладзе</p>
+            <div class="main__leaveRequest-button">
+                <p class="main__request-button wow animate__animated animate__pulse" data-wow-duration="2s" data-wow-iteration="infinite">Оставить заявку</p>
+                <img class="main__play-button wow animate__animated animate__heartBeat" data-wow-duration="2s" data-wow-delay="1s" src="../../Images/Header/ButtonPlay.png" id="openVideoBtn" alt="Воспроизвести">
+                <a class="main__check-video wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" href="#" id="openVideoLink">Посмотрите видео-отчет 2018-2019</a>
+            </div>
+            <div class="main__examplesOfPlaces-list grid-container">
+                <div class="image-wrapper wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <span class="image-number">01</span>
+                    <img src="../../Images/Main/PlacesPhotos/Island_1.png" alt="Доломиты" class="hover-effect">
+                    <span class="image-caption">Сказочные <br> Доломиты</span>
+                </div>
+                <div class="image-wrapper wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <span class="image-number">02</span>
+                    <img src="../../Images/Main/PlacesPhotos/Island_2.png" alt="Норвегия" class="hover-effect">
+                    <span class="image-caption">Неизвестная <br> Норвегия</span>
+                </div>
+                <div class="image-wrapper wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <span class="image-number">03</span>
+                    <img src="../../Images/Main/PlacesPhotos/Island_3.png" alt="Исландия" class="hover-effect">
+                    <span class="image-caption">Водопады <br> Исландии</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__tourDerection">
+            <div class="main__hawaii-container wow animate__animated animate__fadeInLeft" data-wow-duration="1.2s">
+                <h1 class="datesOfTour_hawaii">10-24 <br> Апреля</h1>
+                <img class="main__hawaii-img hover-effect" src="../../Images/Main/PlacesPhotos/Hawaii.png" alt="Гавайи">
+                <p class="description_hawaii">Большое ущелье на <br> острове Гавайи</p>
+            </div>
+            <div class="main__textNextToHawaii wow animate__animated animate__fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.3s">
+                <h1 class="checkTourDirection">Посмотрите все <br> направления туров</h1>
+                <p class="descriptionOfDirection">Берега океанов и дикие пляжи с <br> редкими породами деревьев. Местная архитектура и первозданный вид дикой природы</p>
+                <p class="lookAll-button hover-effect">Смотреть все</p>
+            </div>
+        </section>
+
+        <section class="main__registrationform">
+            <img class="main__registrationform-img" src="../../Images/Main/Registrationform.png" alt="Фон формы">
+            <div class="form-content wow animate__animated animate__fadeInUp" data-wow-duration="1.2s">
+                <h1 class="main__leaveRequest">Оставьте заявку на <br> бесплатную <br> консультацию</h1>
+                <p class="main__weWillRecall">Мы перезвоним вам в <br> ближайшее время</p>
+                <div class="main__input-form">
+                    <input class="name hover-effect-input" placeholder="Ваше имя">
+                    <input class="phone hover-effect-input" placeholder="+7(___)___-__-__">
+                    <button class="leaveRequest hover-effect">Оставить заявку</button>
+                    <p class="accepting">Нажимая кнопку, вы даете согласие на <a href="#">обработку <br> персональных данных</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__requests">
+            <div class="main__textNextToReview wow animate__animated animate__fadeInLeft" data-wow-duration="1.2s">
+                <h1 class="reviewDescription">Что пишут участники наших <br> путешествий</h1>
+                <p class="descriptionOfUsers">87% участников приходят по личной рекомендации от друзей. А каждый 4-й путешествует с нами больше двух раз!</p>
+                <p class="readRequests-button hover-effect">Читать отзывы</p>
+            </div>
+            <div class="review-img wow animate__animated animate__fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.3s">
+                <h1 class="reviewName">Отзыв</h1>
+                <h1 class="reviewerName">Елена Иванова</h1>
+                <img class="main__review-img hover-effect" src="../../Images/Main/Review.png" alt="Отзыв">
+                <p class="review-text">Пожалуй, это был самый <br> лучший отпуск в моей жизни...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="footer__logo"><img src="../../Images/Footer/Logo/Trip&Mind_Logo.png" alt="Логотип"></a>
+        <a class="footer__privacyPolicy">Политика конфиденциальности</a>
+        <a class="footer__Accepting">Соглашение на обработку персональных данных</a>
+        <div class="footer__socialNetworks">
+            <a class="facebook-icon hover-effect-social"><img src="../../Images/Footer/SocialMedia/Facebook_Logo.png" alt="Facebook"></a>
+            <a class="twitter-icon hover-effect-social"><img src="../../Images/Footer/SocialMedia/Twitter_Logo.png" alt="Twitter"></a>
+            <a class="vk-icon hover-effect-social"><img src="../../Images/Footer/SocialMedia/VK_Logo.png" alt="VK"></a>
+            <a class="youtube-icon hover-effect-social"><img src="../../Images/Footer/SocialMedia/YouTube_Logo.png" alt="YouTube"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
